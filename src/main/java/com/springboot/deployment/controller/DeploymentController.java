@@ -5,11 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class DeploymentController {
 
     @GetMapping("/dep")
     public String printMessage(){
-        return "deployment process completed......";
+        return "deployment process completed......message from Deployment service";
     }
 }
